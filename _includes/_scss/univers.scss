@@ -1,0 +1,26 @@
+$break-medium: 700px;
+$break-large: 960px;
+
+html {
+  font-size: calc(12px + 0.64vw);
+}
+@media screen and (min-width: $break-large) {
+  html {
+    font-size: 18px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}

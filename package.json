@@ -1,0 +1,24 @@
+{
+  "name": "m4h-map-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doingz/m4h-map-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doingz/m4h-map-test/issues"
+  },
+  "homepage": "https://github.com/doingz/m4h-map-test#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "sass": "^1.45.2"
+  }
+}
