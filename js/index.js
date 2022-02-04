@@ -3,45 +3,31 @@ $(document).ready(function() {
   w = $(window).width();
   h = $(window).height();
 
+  $('.map-holder').scrollLeft(1200);
+  $('.map-holder').scrollTop(200);
 
-  $('.size').click(function() {
 
-    $('.size').removeClass('active');
+  $('.pointer').mouseenter(function() {
 
-    s = $(this).data('stock');
-
-    $('.stk').html(s);
-
-    $('.stock').addClass('active');
-
-    $(this).addClass('active');
-
-    $('.snipcart-add-item').attr('data-item-id', $(this).data('id'));
-
-    $('.snipcart-add-item').attr('data-item-custom1-value', $(this).data('size'));
-
-    $('.snipcart-add-item').removeClass('disabled');
+    id = parseInt($(this).attr('id').replace('p',''));
+    project = '#project' + id;
+    $(project).addClass('active');
 
   });
 
 
-  $('.color').click(function() {
+  $('.pointer').mouseleave(function() {
 
-    $('.color').removeClass('active');
+    id = parseInt($(this).attr('id').replace('p',''));
+    project = '#project' + id;
+    $(project).removeClass('active');
 
-    s = $(this).data('stock');
+  });
 
-    $('.stk').html(s);
 
-    $('.stock').addClass('active');
+  $('.pointer').click(function() {
 
-    $(this).addClass('active');
-
-    $('.snipcart-add-item').attr('data-item-id', $(this).data('id'));
-
-    $('.snipcart-add-item').attr('data-item-custom1-value', $(this).data('color'));
-
-    $('.snipcart-add-item').removeClass('disabled');
+    alert('Lorem ipsum ..')
 
   });
 
